@@ -1,0 +1,3 @@
+Found PN532 with firmware version: 1.6
+Host: 127.0.0.1	Port: 1883
+Main Exception: [Errno 111] Connection refused

@@ -1,0 +1,4 @@
+/home/ubuntu/ECE631/lab4python/pn532/spi.py:118: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(cs, GPIO.OUT)
+/home/ubuntu/ECE631/lab4python/pn532/spi.py:118: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(cs, GPIO.OUT)
