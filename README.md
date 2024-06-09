@@ -1,4 +1,4 @@
-# Garage Door Opener with Authentication
+# IoT: Garage Door Opener with Authentication
 
 **Final Project for ECE 631**
 
