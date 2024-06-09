@@ -1,0 +1,148 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"width": 1,
+			"row": {
+				"2": 1,
+				"3": 1
+			},
+			"col": {
+				"2": 1,
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "DOOR STATUS",
+						"size": "regular",
+						"value": "datasources[\"andy\"][\"msg\"][\"Switch\"]",
+						"animate": false
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "picture",
+					"settings": {
+						"src": "datasources[\"Final Project\"][\"msg\"][\"Pic\"]",
+						"refresh": 3
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"2": 5,
+				"3": 11
+			},
+			"col": {
+				"2": 1,
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Distance",
+						"size": "regular",
+						"value": "datasources[\"andy\"][\"msg\"][\"Distance\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"2": 9,
+				"3": 11
+			},
+			"col": {
+				"2": 1,
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "NFC Card Reader",
+						"size": "regular",
+						"value": "datasources[\"Final Project\"][\"msg\"][\"ID\"]",
+						"animate": false
+					}
+				}
+			]
+		},
+		{
+			"title": "Status Light",
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "picture",
+					"settings": {
+						"src": "datasources[\"andy\"][\"msg\"][\"Color\"]",
+						"refresh": 3
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "Final Project",
+			"type": "paho_mqtt",
+			"settings": {
+				"server": "144.126.217.239",
+				"port": 8080,
+				"use_ssl": false,
+				"client_id": "",
+				"username": "",
+				"password": "",
+				"topic": "ateam/#",
+				"json_data": true,
+				"name": "Final Project"
+			}
+		},
+		{
+			"name": "andy",
+			"type": "paho_mqtt",
+			"settings": {
+				"server": "144.126.217.239",
+				"port": 8080,
+				"use_ssl": false,
+				"client_id": "",
+				"username": "",
+				"password": "",
+				"topic": "ece631/Lab7/Distance/#",
+				"json_data": true,
+				"name": "andy"
+			}
+		}
+	],
+	"columns": 3
+}
